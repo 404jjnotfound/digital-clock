@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #111827;
+    color: #e5e7eb;
+    font-family: inter, sans-serif;
+    font-weight: 400;
+    font-size: 32px;
+    letter-spacing: 3px;
+}
+
+#main-div {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+#main-div .apply-circular-border {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px;
+    margin-left: 24px;
+    border: 5px solid #86efac;
+    
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+}
+
+#main-div .apply-circular-border .time-label {
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.time-text {
+    margin-bottom: 10px;
+}
+
+#main-div #day-status-div {
+    display: flex;
+    width: 80px;
+    height: 150px;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
