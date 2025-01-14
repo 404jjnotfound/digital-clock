@@ -6,12 +6,12 @@ const hoursText = document.getElementById("hours-text"),
 
 setInterval(function() {
     // Get current time in hours, minutes, and seconds
-    const date = new Date();
-    let currentHour = date.getHours()
+    const dateNow = new Date();
+    let currentHour = dateNow.getHours()
         dayStatus = currentHour < 12 ? "AM" : "PM",
         currentHour = currentHour % 12 || 12, // convert in 12 hour AM/PM format
-        currentMinute = date.getMinutes(),
-        currentSecond = date.getSeconds();
+        currentMinute = dateNow.getMinutes(),
+        currentSecond = dateNow.getSeconds();
 
     // Display current time into two digit format
     hoursText.innerHTML = ("0" + currentHour).slice(-2);
